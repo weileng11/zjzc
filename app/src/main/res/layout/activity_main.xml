@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--<cn.bs.zjzc.div.ExpandableTextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="阿斯蒂芬哈坎松交电话费快接啊受到了开发及哈里斯空间的花阿斯蒂芬哈坎松交电话费快接啊受到了开发及哈里斯空间的花费老卡机阿什顿联发科技哈里斯的开发好啦空间上的花费了空间啊哈萨费老卡机阿什顿联发科技哈里斯的开发好啦空间上的花费了空间啊哈萨"/>-->
+
+
+    <in.srain.cube.views.ptr.PtrClassicFrameLayout
+        android:id="@+id/ptr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></ListView>
+    </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+
+
+    <cn.bs.zjzc.div.FloatView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/zjzc_icon_swap_order_status" />
+
+</RelativeLayout>

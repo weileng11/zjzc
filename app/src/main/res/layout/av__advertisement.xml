@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.zhy.autolayout.AutoFrameLayout
+        android:layout_width="520px"
+        android:layout_height="715px"
+        android:layout_gravity="center">
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="685px"
+            android:layout_centerInParent="true"
+            android:layout_gravity="bottom" />
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="70px"
+            android:layout_height="70px"
+            android:layout_gravity="right"
+            android:scaleType="centerInside"
+            android:src="@mipmap/zjzc_home_close" />
+    </com.zhy.autolayout.AutoFrameLayout>
+
+
+</com.zhy.autolayout.AutoFrameLayout>

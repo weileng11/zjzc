@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="30px">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40px"
+        android:text=""
+        android:textSize="30px" />
+
+    <com.zhy.autolayout.AutoFrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:lines="2"
+            android:id="@+id/content"
+            android:ellipsize="end"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="非老卡机受到发狂似的看见过哈萨迪克就更好啦空间划分非老卡机受到发狂似的看见过哈萨迪克就更好啦空间划分的苏格兰快接啊获得了开发计划管理卡得很观看哈德利科技孵化购卡的苏格兰快接啊获得了开发计划管理卡得很观看哈德利科技孵化购卡"
+            android:textSize="30px" />
+
+        <TextView
+            android:id="@+id/btn_hide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:background="@color/white"
+            android:paddingRight="25px"
+            android:text="... 展开"
+            android:textColor="@color/zjzc_blue"
+            android:textSize="30px" />
+    </com.zhy.autolayout.AutoFrameLayout>
+
+
+</com.zhy.autolayout.AutoLinearLayout>

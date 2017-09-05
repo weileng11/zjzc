@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <!--白色-->
+    <color name="white">#ffffffff</color>
+    <!--黑色-->
+    <color name="zjzc_black">#333333</color>
+    <!--蓝色-->
+    <color name="zjzc_blue">#2993ff</color>
+    <!--浅蓝色-->
+    <color name="zjzc_light_blue">#52a7ff</color>
+    <!--浅灰色-->
+    <color name="zjzc_color_grey_light">#999999</color>
+    <!--灰色-->
+    <color name="zjzc_color_grey">#666666</color>
+    <!--深灰色-->
+    <color name="zjzc_color_grey_dark">#6b7782</color>
+    <!--浅橙色-->
+    <color name="zjzc_orange_light">#ff8704</color>
+    <!--深橙色-->
+    <color name="zjzc_orange_dark">#f55404</color>
+    <!--默认页面背景颜色-->
+    <color name="zjzc_gp_bg_color">#F0F0F0</color>
+    <!--默认EditText提示字体颜色-->
+    <color name="zjzc_hint_text_color">#A8A8A8</color>
+    <!--默认EditText提示字体颜色-->
+    <color name="zjzc_hint_text_color2">#D0D0D0</color>
+    <!--默认TopBar背景颜色-->
+    <color name="zjzc_topbar_bg_color">#f9f9f9</color>
+    <!--按下背景颜色-->
+    <color name="pressed_bg_color">#10000000</color>
+
+</resources>

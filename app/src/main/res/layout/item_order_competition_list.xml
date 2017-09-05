@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="20px"
+    android:paddingRight="20px">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20px"
+        android:background="@drawable/order_list_item_dash_box_bg"
+        android:orientation="vertical"
+        android:paddingLeft="30px"
+        android:paddingRight="30px">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/order_item_money_layout"
+            android:layout_width="match_parent"
+            android:layout_height="114px"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/order_item_delivery_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="18px"
+                android:drawableLeft="@mipmap/zjzc_icon_clock"
+                android:drawablePadding="10px"
+                android:text="现在"
+                android:textColor="@color/zjzc_black"
+                android:textSize="28px" />
+
+            <ImageView
+                android:id="@+id/order_item_insured"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15px"
+                android:layout_toLeftOf="@+id/order_item_money"
+                android:src="@mipmap/zjzc_icon_insured"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/order_item_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/order_item_delivery_time"
+                android:background="@mipmap/zjzc_box_delivry"
+                android:gravity="center"
+                android:text="外卖配送"
+                android:textColor="#cf69ff"
+                android:textSize="21px" />
+
+            <TextView
+                android:id="@+id/order_item_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="5.00元"
+                android:textColor="@color/zjzc_orange_light"
+                android:textSize="36px" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#efefef" />
+
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/order_item_address_layout"
+            android:layout_width="match_parent"
+            android:layout_height="180px">
+
+            <TextView
+                android:id="@+id/order_item_icon_take"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/order_item_take_address"
+                android:layout_alignParentLeft="true"
+                android:drawableLeft="@mipmap/zjzc_icon_green_circle"
+                android:drawablePadding="10px"
+                android:text="取"
+                android:textColor="@color/zjzc_hint_text_color"
+                android:textSize="21px" />
+
+            <TextView
+                android:id="@+id/order_item_take_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/line"
+                android:layout_marginLeft="90px"
+                android:text="金地工业区"
+                android:textColor="@color/zjzc_black"
+                android:textSize="28px" />
+
+            <TextView
+                android:id="@+id/order_item_distance_take"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/order_item_take_address"
+                android:layout_alignRight="@+id/line"
+                android:drawableLeft="@mipmap/zjzc_icon_distance"
+                android:drawablePadding="10px"
+                android:text="距1.5公里您"
+                android:textColor="@color/zjzc_hint_text_color"
+                android:textSize="21px"
+                android:visibility="visible" />
+
+            <View
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="30px"
+                android:layout_marginRight="30px"
+                android:layout_marginTop="30px"
+                android:layout_toLeftOf="@+id/arrow"
+                android:background="#efefef" />
+
+            <ImageView
+                android:id="@+id/arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15px"
+                android:layout_marginRight="25px"
+                android:src="@mipmap/zjzc_personal_info_right_arrow" />
+
+            <TextView
+                android:id="@+id/order_item_icon_delivery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/order_item_delivery_address"
+                android:layout_alignParentLeft="true"
+                android:drawableLeft="@mipmap/zjzc_icon_red_circle"
+                android:drawablePadding="10px"
+                android:text="送"
+                android:textColor="@color/zjzc_hint_text_color"
+                android:textSize="21px" />
+
+            <TextView
+                android:id="@+id/order_item_delivery_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line"
+                android:layout_marginLeft="90px"
+                android:text="车公庙丰盛町附近"
+                android:textColor="@color/zjzc_black"
+                android:textSize="28px" />
+
+            <TextView
+                android:id="@+id/order_item_distance_delivery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/order_item_delivery_address"
+                android:layout_alignRight="@+id/line"
+                android:drawableLeft="@mipmap/zjzc_icon_distance"
+                android:drawablePadding="10px"
+                android:text="距5.0公里您"
+                android:textColor="@color/zjzc_hint_text_color"
+                android:textSize="21px"
+                android:visibility="visible" />
+
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+</com.zhy.autolayout.AutoLinearLayout>

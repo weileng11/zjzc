@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/corner_bg_white_r20_normal"
+    android:paddingBottom="20px"
+    android:paddingTop="10px">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="520px"
+        android:layout_height="685px">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="10px"
+            android:gravity="center"
+            android:text="版本升级"
+            android:textColor="@color/cube_holo_orange_dark"
+            android:textSize="22sp" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/title"
+            android:background="#DDDDDD" />
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/number_progress_bar"
+            android:layout_below="@+id/line"
+            android:fadeScrollbars="false"
+            android:scrollbarSize="2dp"
+            android:scrollbarThumbVertical="@color/cube_holo_orange_dark">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/functionLab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/line"
+                    android:layout_marginTop="30px"
+                    android:text="【新增】"
+                    android:textColor="@color/cube_holo_orange_dark"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/addFunction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5px"
+                    android:lineSpacingExtra="5px"
+                    android:paddingLeft="15px"
+                    android:textColor="#adadad"
+                    android:textSize="16sp"
+                    android:typeface="serif" />
+
+                <TextView
+                    android:id="@+id/optimizeLab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="【优化】"
+                    android:textColor="@color/cube_holo_orange_dark"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/optimize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5px"
+                    android:lineSpacingExtra="5px"
+                    android:paddingLeft="15px"
+                    android:textColor="#adadad"
+                    android:textSize="16sp"
+                    android:typeface="serif" />
+            </LinearLayout>
+        </ScrollView>
+
+        <com.daimajia.numberprogressbar.NumberProgressBar
+            android:id="@+id/number_progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/layout"
+            android:layout_margin="10px"
+            android:visibility="invisible" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:paddingBottom="40px"
+            android:paddingLeft="40px">
+
+            <TextView
+                android:id="@+id/cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="40px"
+                android:layout_weight="1"
+                android:background="@drawable/corner_bg_grey_r6"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="clickBTN"
+                android:padding="20px"
+                android:text="以后再说"
+                android:textColor="@color/white"
+                android:textSize="34px" />
+
+            <TextView
+                android:id="@+id/ok"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="40px"
+                android:layout_weight="1"
+                android:background="@drawable/corner_bg_orange_r6"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="clickBTN"
+                android:padding="20px"
+                android:text="现在升级"
+                android:textColor="@color/white"
+                android:textSize="34px" />
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoRelativeLayout>
+</com.zhy.autolayout.AutoFrameLayout>

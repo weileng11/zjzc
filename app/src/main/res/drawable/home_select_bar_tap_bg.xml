@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@mipmap/zjzc_home_select_bar_tap_selected_bg" android:state_checked="true" />
+    <item android:drawable="@mipmap/zjzc_home_select_bar_tap_unselected_bg" android:state_checked="false" />
+
+</selector>

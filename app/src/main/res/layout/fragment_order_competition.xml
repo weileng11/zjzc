@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <in.srain.cube.views.ptr.PtrClassicFrameLayout
+        android:id="@+id/order_competition_ptr_frame"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ListView
+            android:id="@+id/order_competition_lv_order_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#e5e5e5" />
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/order_competition_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:background="@color/white"
+        android:paddingLeft="25px"
+        android:paddingRight="25px">
+
+        <TextView
+            android:id="@+id/order_competition_flush_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/zjzc_flush_order_list_bg"
+            android:gravity="center"
+            android:text="刷新列表"
+            android:textColor="@color/zjzc_hint_text_color"
+            android:textSize="30px" />
+
+        <cn.bs.zjzc.div.MyCheckBox
+            android:id="@+id/order_competition_work_switch"
+            style="@style/normal_check_box_style"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/start_end_work_switch_bg" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

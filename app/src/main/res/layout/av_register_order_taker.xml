@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/zjzc_gp_bg_color"
+    android:orientation="vertical">
+
+    <cn.bs.zjzc.div.TopBarView
+        android:id="@+id/register_order_taker_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_text="申请成为接单用户" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20px">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/corner_bg_white_r20_shadow"
+                android:orientation="vertical"
+                android:padding="30px">
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="90px">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="20px"
+                        android:src="@mipmap/zizc_lits_asterisk" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="所在城市"
+                        android:textColor="@color/zjzc_hint_text_color"
+                        android:textSize="30px" />
+
+                    <TextView
+                        android:id="@+id/register_order_taker_select_city"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="65px"
+                        android:background="@null"
+                        android:drawablePadding="25px"
+                        android:drawableRight="@mipmap/zjzc_arrow_right"
+                        android:gravity="center_vertical"
+                        android:hint="请选择省/市区"
+                        android:textColorHint="@color/zjzc_hint_text_color"
+                        android:textColor="@color/zjzc_black"
+                        android:textSize="30px" />
+
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <include layout="@layout/include_line" />
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="90px">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="20px"
+                        android:src="@mipmap/zizc_lits_asterisk" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="真实姓名"
+                        android:textColor="@color/zjzc_hint_text_color"
+                        android:textSize="30px" />
+
+                    <EditText
+                        android:id="@+id/register_order_taker_et_real_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/zjzc_black"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="65px"
+                        android:background="@null"
+                        android:hint="请输入真实姓名"
+                        android:textColorHint="@color/zjzc_hint_text_color"
+                        android:textSize="30px" />
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <include layout="@layout/include_line" />
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="90px">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="20px"
+                        android:src="@mipmap/zizc_lits_asterisk" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="身份证号"
+                        android:textColor="@color/zjzc_hint_text_color"
+                        android:textSize="30px" />
+
+                    <EditText
+                        android:id="@+id/register_order_taker_et_id_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="65px"
+                        android:background="@null"
+                        android:textColor="@color/zjzc_black"
+                        android:hint="请输入身份证号"
+                        android:textColorHint="@color/zjzc_hint_text_color"
+                        android:textSize="30px" />
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <include layout="@layout/include_line" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="110px"
+                    android:gravity="center"
+                    android:text="请按照示例图样式进行拍摄，保证照片清晰"
+                    android:textColor="#f00"
+                    android:textSize="30px" />
+
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/register_order_taker_identification_photo1"
+                        android:layout_width="300px"
+                        android:layout_height="230px"
+                        android:layout_alignParentLeft="true" />
+
+                    <ImageView
+                        android:id="@+id/register_order_taker_add_identification_photo1"
+                        android:layout_width="300px"
+                        android:layout_height="230px"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/zjzc_lits_upload" />
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="40px"
+                    android:layout_marginTop="40px">
+
+                    <ImageView
+                        android:id="@+id/register_order_taker_identification_photo2"
+                        android:layout_width="300px"
+                        android:layout_height="230px"
+                        android:layout_alignParentLeft="true" />
+
+                    <ImageView
+                        android:id="@+id/register_order_taker_add_identification_photo2"
+                        android:layout_width="300px"
+                        android:layout_height="230px"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/zjzc_lits_upload" />
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="215px">
+
+                    <ImageView
+                        android:id="@+id/register_order_taker_identification_photo3"
+                        android:layout_width="302px"
+                        android:layout_height="233px"
+                        android:layout_alignParentLeft="true" />
+
+                    <ImageView
+                        android:id="@+id/register_order_taker_add_identification_photo3"
+                        android:layout_width="300px"
+                        android:layout_height="230px"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/zjzc_lits_upload" />
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <TextView
+                android:id="@+id/register_order_taker_btn_commit"
+                style="@style/my_big_button_style"
+                android:layout_marginBottom="130px"
+                android:layout_marginTop="45px"
+                android:text="注册接单" />
+        </com.zhy.autolayout.AutoLinearLayout>
+    </ScrollView>
+</com.zhy.autolayout.AutoLinearLayout>

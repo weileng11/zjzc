@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/zjzc_gp_bg_color"
+    android:orientation="vertical">
+
+    <cn.bs.zjzc.div.TopBarView
+        android:id="@+id/home_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="91px"
+        app:right_enable="true"
+        app:right_text="取消订单"
+        app:title_text="下单成功" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/id_bottom_bar"
+        android:layout_below="@+id/home_top_bar">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/zjzc_gp_bg_color"
+            android:orientation="vertical">
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/id_count_down"
+                    android:layout_width="match_parent"
+                    android:layout_height="140px"
+                    android:gravity="center"
+                    android:text="倒计时"
+                    android:textColor="@color/zjzc_color_grey_dark"
+                    android:textSize="46px" />
+
+                <TextView
+                    android:id="@+id/id_success_tips"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/id_count_down"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="118px"
+                    android:layout_marginRight="118px"
+                    android:text="您已成功下单，请耐心等待接单，系统会随时通知您最新进展，您也可在我的订单中查看订单状态，谢谢."
+                    android:textColor="@color/zjzc_hint_text_color"
+                    android:textSize="22px" />
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/id_success_tips"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="30px"
+                    android:layout_marginTop="30px"
+                    android:background="@mipmap/zjzc_alarm_clock_bg"
+                    android:gravity="center"
+                    android:paddingTop="30px"
+                    android:text="06:03"
+                    android:textColor="#010101"
+                    android:textSize="42px" />
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <include layout="@layout/include_line" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20px"
+                android:background="#f9f9f9" />
+
+            <include layout="@layout/include_line" />
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="64px"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingLeft="40px">
+
+                <!--左边标题-->
+                <TextView
+                    android:id="@+id/tv_order_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="50px"
+                    android:text="订单号："
+                    android:textColor="@color/zjzc_color_grey_dark"
+                    android:textSize="30px" />
+
+
+                <TextView
+                    android:id="@+id/tv_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="50px"
+                    android:text="服务类型："
+                    android:textColor="@color/zjzc_color_grey_dark"
+                    android:textSize="30px" />
+
+                <TextView
+                    android:id="@+id/tv_take_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="50px"
+                    android:text="取餐时间："
+                    android:textColor="@color/zjzc_color_grey_dark"
+                    android:textSize="30px" />
+
+                <TextView
+                    android:id="@+id/tv_take_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="50px"
+                    android:text="取餐地址："
+                    android:textColor="@color/zjzc_color_grey_dark"
+                    android:textSize="30px" />
+
+                <TextView
+                    android:id="@+id/tv_delivery_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="50px"
+                    android:text="送餐地址："
+                    android:textColor="@color/zjzc_color_grey_dark"
+                    android:textSize="30px" />
+
+                <TextView
+                    android:id="@+id/tv_remark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="50px"
+                    android:layout_marginTop="50px"
+                    android:text="备注："
+                    android:textColor="@color/zjzc_color_grey_dark"
+                    android:textSize="30px" />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </ScrollView>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/id_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="1px"
+        android:background="@drawable/white_bg_shadow">
+
+        <TextView
+            android:id="@+id/btn_check_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10px"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="10px"
+            android:background="@mipmap/zjzc_orange_button_bg_small"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="clickBTN"
+            android:text="查看订单"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/btn_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:clickable="true"
+            android:onClick="clickBTN"
+            android:src="@mipmap/zjzc_bottom_icon_tip" />
+
+        <TextView
+            android:id="@+id/btn_order_again"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10px"
+            android:layout_marginRight="30px"
+            android:layout_marginTop="10px"
+            android:background="@mipmap/zjzc_orange_button_bg_small"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="clickBTN"
+            android:text="继续下单"
+            android:textColor="@color/white" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+</com.zhy.autolayout.AutoRelativeLayout>

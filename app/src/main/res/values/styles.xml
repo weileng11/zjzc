@@ -1,0 +1,164 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.Design.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- 通用设置选项样式-->
+    <style name="my_setting_option_item_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">95px</item>
+    </style>
+
+    <!-- 通用输入框样式-->
+    <style name="my_box_edit_text_style">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@mipmap/zjzc_edit_text_box_normal</item>
+        <item name="android:paddingLeft">40px</item>
+        <item name="android:lines">1</item>
+        <item name="android:textColorHint">@color/zjzc_hint_text_color2</item>
+        <item name="android:textSize">30px</item>
+    </style>
+
+    <!-- 通用长按钮样式-->
+    <style name="my_big_button_style">
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_height">90px</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@drawable/big_button_bg</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">34px</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- 通用短按钮样式-->
+    <style name="my_normal_button_style">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:background">@drawable/normal_button_bg</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">34px</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!--首页侧滑菜单样式-->
+    <style name="home_menu_option_style">
+        <item name="android:clickable">true</item>
+        <item name="android:paddingLeft">30px</item>
+        <item name="android:background">@drawable/pressed_background</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">90px</item>
+        <item name="android:drawablePadding">20px</item>
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:textColor">@color/zjzc_color_grey</item>
+        <item name="android:textSize">30px</item>
+    </style>
+    <!--个人信息设置界面样式-->
+    <style name="personal_info_option_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">95px</item>
+    </style>
+
+    <!--tablayout样式-->
+    <style name="my_tab_layout_style" parent="Widget.Design.TabLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">81px</item>
+        <item name="android:layout_marginTop">-2dp</item>
+        <item name="android:layout_marginLeft">-1dp</item>
+        <item name="android:layout_marginRight">-1dp</item>
+        <item name="android:background">@drawable/white_bg_shadow2</item>
+        <item name="tabIndicatorColor">@color/zjzc_orange_light</item>
+        <item name="tabIndicatorHeight">6px</item>
+        <item name="tabSelectedTextColor">@color/zjzc_orange_light</item>
+        <item name="tabTextColor">@color/zjzc_hint_text_color</item>
+        <item name="tabTextAppearance">@style/my_tab_layout_text_style</item>
+    </style>
+
+    <!--tablayout字体样式-->
+    <style name="my_tab_layout_text_style">
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <!--通用checkbox样式-->
+    <style name="normal_check_box_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/check_box_bg</item>
+        <item name="android:button">@null</item>
+        <item name="android:textSize">30px</item>
+        <item name="android:textColor">@drawable/check_box_text_color</item>
+    </style>
+
+    <!--checkbox样式-->
+    <style name="radioButtonStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">30px</item>
+        <item name="android:paddingBottom">30px</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">30px</item>
+        <item name="android:layout_marginTop">30px</item>
+        <item name="android:background">@drawable/order_type_selector</item>
+        <item name="android:textColor">@drawable/order_type_selector</item>
+        <item name="android:button">@null</item>
+
+    </style>
+
+    <!--接单类型设置popuwindow动画-->
+    <style name="popwin_anim_style">
+        <item name="android:windowEnterAnimation">@anim/menushow</item>
+        <item name="android:windowExitAnimation">@anim/menuhide</item>
+    </style>
+
+    <style name="my_dialog_style" parent="android:style/Theme.Dialog">
+        <item name="android:background">#00000000</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="ratingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:progressDrawable">@drawable/ratingbar_drawable</item>
+    </style>
+    <!--对话框样式-->
+    <!-- 自定义仿IOS的AlertDialog的样式 -->
+    <style name="dialog" parent="@style/sheetdialog">
+        <item name="android:windowAnimationStyle">@style/ActionSheetDialogAnimation</item>
+    </style>
+    <!-- 自定义仿IOS的AlertDialog的样式 -->
+    <style name="sheetdialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+    <!-- ActionSheet进出动画 -->
+    <style name="ActionSheetDialogAnimation" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/actionsheet_dialog_in</item>
+        <item name="android:windowExitAnimation">@anim/actionsheet_dialog_out</item>
+    </style>
+
+    <!--广告页面、版本升级-->
+    <style name="AdverDialogStyle" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+</resources>

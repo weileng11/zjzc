@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/zjzc_gp_bg_color"
+    android:orientation="vertical">
+
+    <cn.bs.zjzc.div.TopBarView
+        android:id="@+id/order_pay_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_text="订单支付" />
+
+    <cn.bs.zjzc.div.NormalOptionView
+        android:id="@+id/order_pay_coupon"
+        style="@style/my_setting_option_item_style"
+        app:content_text_color="@color/zjzc_orange_light"
+        app:item_content="暂无可用优惠券"
+        app:item_title="优惠券"
+        app:title_left_drawable="@mipmap/zjzc_icon_coupon"
+        app:title_text_color="@color/zjzc_color_grey_dark" />
+
+    <com.zhy.autolayout.AutoFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="95px"
+        android:layout_marginTop="20px"
+        android:background="@color/white"
+        android:paddingLeft="30px"
+        android:paddingRight="30px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:drawableLeft="@mipmap/zjzc_icon_account_pay"
+            android:drawablePadding="20px"
+            android:gravity="center_vertical"
+            android:text="账户支付"
+            android:textColor="@color/zjzc_color_grey_dark" />
+
+        <CheckBox
+            android:id="@+id/order_pay_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:button="@drawable/radio_button_bg" />
+    </com.zhy.autolayout.AutoFrameLayout>
+
+    <include layout="@layout/include_line" />
+
+    <com.zhy.autolayout.AutoFrameLayout
+        android:id="@+id/weChatPay"
+        android:layout_width="match_parent"
+        android:layout_height="95px"
+        android:background="@color/white"
+        android:paddingLeft="30px"
+        android:paddingRight="30px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:drawableLeft="@mipmap/zjzc_icon_wechat_pay"
+            android:drawablePadding="20px"
+            android:gravity="center_vertical"
+            android:text="微信支付"
+            android:textColor="@color/zjzc_color_grey_dark" />
+
+        <CheckBox
+            android:id="@+id/order_pay_wechat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:button="@drawable/radio_button_bg"
+            android:gravity="center" />
+    </com.zhy.autolayout.AutoFrameLayout>
+
+    <include layout="@layout/include_line" />
+
+    <com.zhy.autolayout.AutoFrameLayout
+        android:id="@+id/aliPay"
+        android:layout_width="match_parent"
+        android:layout_height="95px"
+        android:background="@color/white"
+        android:paddingLeft="30px"
+        android:paddingRight="30px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:drawableLeft="@mipmap/zjzc_icon_alipay"
+            android:drawablePadding="20px"
+            android:gravity="center_vertical"
+            android:text="支付宝"
+            android:textColor="@color/zjzc_color_grey_dark" />
+
+        <CheckBox
+            android:id="@+id/order_pay_alipay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:button="@drawable/radio_button_bg" />
+    </com.zhy.autolayout.AutoFrameLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/home_password_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:layout_marginTop="40px"
+        android:background="@mipmap/zjzc_orange_button_bg_big"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="clickConfirm">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确认支付"
+            android:textColor="@color/white"
+            android:textSize="34px" />
+
+        <TextView
+            android:id="@+id/totalMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:textColor="@color/white"
+            android:textSize="42px" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+</com.zhy.autolayout.AutoLinearLayout>

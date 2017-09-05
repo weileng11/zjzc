@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/zjzc_gp_bg_color"
+    android:orientation="vertical">
+
+    <cn.bs.zjzc.div.TopBarView
+        android:id="@+id/home_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_text="选择城市" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="220px"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="25px"
+        android:paddingRight="25px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="88px"
+            android:gravity="center_vertical|right"
+            android:text="当前定位"
+            android:textColor="@color/zjzc_hint_text_color"
+            android:textSize="21px" />
+
+        <cn.bs.zjzc.div.DashLine
+            android:layout_width="match_parent"
+            android:layout_height="3px"
+            android:background="@drawable/dash_line_bg_2px" />
+
+        <com.zhy.autolayout.AutoFrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/select_city_locate_city"
+                android:layout_width="105px"
+                android:layout_height="66px"
+                android:layout_gravity="center_vertical"
+                android:background="@mipmap/zjzc_btn_get_verification_code_bg"
+                android:gravity="center"
+                android:text="深圳"
+                android:textColor="@color/zjzc_orange_light"
+                android:textSize="30px" />
+        </com.zhy.autolayout.AutoFrameLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="25px"
+        android:paddingRight="25px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="88px"
+            android:gravity="center_vertical|right"
+            android:text="已开通其他城市"
+            android:textColor="@color/zjzc_hint_text_color"
+            android:textSize="21px" />
+
+        <com.zhy.view.flowlayout.TagFlowLayout
+            android:id="@+id/select_city_city_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30px"
+            app:gravity="center" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

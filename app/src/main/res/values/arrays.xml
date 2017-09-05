@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="str_array__setting_gender">
+        <item>男</item>
+        <item>女</item>
+    </string-array>
+    <string-array name="str_array_setting_age">
+        <item>00后</item>
+        <item>90后</item>
+        <item>80后</item>
+        <item>70后</item>
+        <item>60后</item>
+        <item>50后</item>
+    </string-array>
+    <string-array name="str_array_setting_header">
+        <item>选择本地图片</item>
+        <item>拍照</item>
+        <item>取消</item>
+    </string-array>
+    <string-array name="str_array_home_order_type">
+        <item>外卖配送</item>
+        <item>代买服务</item>
+        <item>代办服务</item>
+        <item>车友之家</item>
+        <item>同城速递</item>
+        <item>全部订单</item>
+    </string-array>
+    <string-array name="str_array_order_setting_distance">
+        <item>1公里</item>
+        <item>3公里</item>
+    </string-array>
+    <string-array name="str_array_order_setting_type">
+        <item>全部</item>
+    </string-array>
+
+    <string-array name="str_array_help_question">
+        <item>1.如何下单？</item>
+        <item>2.为什么收不到系统推送的订单？</item>
+        <item>3.提现几天能到账？</item>
+        <item>4.如何更换手机号？</item>
+        <item>5.积分有什么用？</item>
+        <item>6.支付方式有哪几种？</item>
+        <item>7.如何增加积分？</item>
+        <item>8.接单用户审核需要多长时间？</item>
+        <item>9.如何知道退款到账信息？</item>
+        <item>10.账户中的余额要怎么体现？</item>
+        <item>11.配送中如果货物损坏，要怎么解决？</item>
+        <item>12.优惠券如何使用？</item>
+    </string-array>
+
+    <string-array name="str_array_help_answer">
+        <item>首页，切换到下单界面，然后点击订单类型下单</item>
+        <item>请确认是否有开通开工状态，谢谢。</item>
+        <item>不知道，谢谢</item>
+        <item>不知道，谢谢</item>
+        <item>不知道，谢谢</item>
+        <item>不知道，谢谢</item>
+        <item>不知道，谢谢</item>
+        <item>不知道，谢谢</item>
+        <item>不知道，谢谢</item>
+        <item>不知道，谢谢</item>
+        <item>不知道，谢谢</item>
+        <item>不知道，谢谢</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/evaluation_count"
+        android:layout_width="match_parent"
+        android:layout_height="108px"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="40px"
+        android:text="全部评价（2次）"
+        android:textColor="@color/zjzc_hint_text_color"
+        android:textSize="32px" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/zjzc_hint_text_color2" />
+
+    <in.srain.cube.views.ptr.PtrClassicFrameLayout
+        android:id="@+id/ptr_frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/zjzc_hint_text_color2"
+            android:dividerHeight="1px"
+            android:listSelector="@null" />
+    </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+
+
+</com.zhy.autolayout.AutoLinearLayout>

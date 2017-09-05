@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                       android:layout_width="match_parent"
+                                       android:layout_height="205px"
+                                       android:background="@color/white"
+                                       android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/topTag"
+        android:layout_width="match_parent"
+        android:layout_height="10px"
+        android:layout_alignParentTop="true"
+        />
+
+    <TextView
+        android:id="@+id/tagleft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/discount"
+        android:layout_marginBottom="15px"
+        android:layout_marginLeft="35px"
+        android:text="￥"
+        android:textColor="@color/zjzc_orange_dark"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/discount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="70px"
+        android:text=""
+        android:textColor="@color/zjzc_orange_dark"
+        android:textSize="100px"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tagRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/discount"
+        android:layout_marginBottom="15px"
+        android:layout_marginLeft="130px"
+        android:text="折"
+        android:textColor="@color/zjzc_orange_dark"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:visibility="gone"/>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="2px"
+        android:layout_height="130px"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="200px"
+        android:background="@color/zjzc_hint_text_color"/>
+
+
+    <TextView
+        android:id="@+id/coupon_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/line"
+        android:layout_marginLeft="55px"
+        android:layout_toRightOf="@id/line"
+        android:text="易星到家折扣券"
+        android:textColor="@color/zjzc_color_grey_dark"
+        android:textSize="34px"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/max_discount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/deadline"
+        android:layout_marginBottom="20px"
+        android:layout_marginLeft="55px"
+        android:layout_toRightOf="@id/line"
+        android:text="最高抵扣20元"
+        android:textColor="@color/zjzc_color_grey_light"
+        android:textSize="21px"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/deadline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/line"
+        android:layout_marginLeft="55px"
+        android:layout_toRightOf="@id/line"
+        android:text="有效期至2016.02.15"
+        android:textColor="@color/zjzc_color_grey_light"
+        android:textSize="21px"
+        android:textStyle="bold"/>
+
+</com.zhy.autolayout.AutoRelativeLayout>

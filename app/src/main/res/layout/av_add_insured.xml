@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/zjzc_gp_bg_color"
+    android:orientation="vertical">
+
+    <cn.bs.zjzc.div.TopBarView
+        android:id="@+id/add_insured_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_text="添加保价" />
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="190px"
+        android:layout_marginBottom="40px"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:layout_marginTop="20px"
+        android:background="@drawable/corner_bg_white_r20_shadow"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择保价，损坏丢失按物品声明价格赔偿"
+            android:textColor="@color/zjzc_hint_text_color"
+            android:textSize="30px" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px">
+
+            <EditText
+                android:id="@+id/add_insured_et_price"
+                android:layout_width="326px"
+                android:layout_height="60px"
+                android:layout_marginRight="20px"
+                android:background="@drawable/insured_input_box_dash_bg"
+                android:gravity="center_vertical"
+                android:hint="物品价值≤50元"
+                android:paddingLeft="20px"
+                android:paddingRight="20px"
+                android:inputType="numberDecimal"
+                android:textColorHint="@color/zjzc_hint_text_color2"
+                android:textSize="26px" />
+
+            <TextView
+                android:id="@+id/add_insured_fee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="保价费：0.0元"
+                android:textColor="@color/zjzc_hint_text_color"
+                android:textSize="26px" />
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <TextView
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:id="@+id/add_insured_confirm"
+        style="@style/my_big_button_style"
+        android:text="确定" />
+
+</com.zhy.autolayout.AutoLinearLayout>

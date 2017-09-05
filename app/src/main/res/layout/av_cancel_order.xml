@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                     xmlns:app="http://schemas.android.com/apk/res-auto"
+                                     android:layout_width="match_parent"
+                                     android:layout_height="match_parent"
+                                     android:background="@color/white"
+                                     android:orientation="vertical">
+
+    <cn.bs.zjzc.div.TopBarView
+        android:id="@+id/home_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_text="取消订单"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="110px"
+        android:src="@mipmap/zjzc_icon_smile"/>
+
+    <TextView
+        android:id="@+id/tv_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="105px"
+        android:layout_marginTop="50px"
+        android:gravity="center"
+        android:text="请如实告知我们您取消订单的原因，谢谢~"
+        android:textColor="@color/zjzc_orange_light"
+        android:textSize="24px"/>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/order_detail_reasonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50px"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px">
+
+        <CheckBox
+            android:id="@+id/cancel_order_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/cancel_order_tag_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="下单有误"
+            android:textColor="@drawable/cancel_order_tag_text_color"/>
+
+        <CheckBox
+            android:id="@+id/cancel_order_replay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/cancel_order_error"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/cancel_order_tag_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="重新下单"
+            android:textColor="@drawable/cancel_order_tag_text_color"/>
+
+        <CheckBox
+            android:id="@+id/cancel_order_noNeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/cancel_order_error"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/cancel_order_tag_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="不需要了"
+            android:textColor="@drawable/cancel_order_tag_text_color"/>
+
+        <CheckBox
+            android:id="@+id/cancel_order_Tremor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cancel_order_error"
+            android:layout_marginTop="30px"
+            android:background="@drawable/cancel_order_tag_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="手抖误抢单"
+            android:textColor="@drawable/cancel_order_tag_text_color"
+            android:visibility="gone"/>
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+    <!-- <com.zhy.view.flowlayout.TagFlowLayout
+         android:id="@+id/tag_layout"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         app:gravity="center"/>-->
+
+    <EditText
+        android:id="@+id/et_other_reason"
+        android:layout_width="match_parent"
+        android:layout_height="250px"
+        android:layout_marginBottom="40px"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        android:background="@drawable/edit_text_box_bg"
+        android:gravity="left|top"
+        android:hint="补充其他原因（60字以内）"
+        android:maxLength="60"
+        android:padding="30px"
+        android:textColorHint="@color/zjzc_hint_text_color"
+        android:textSize="34px"/>
+
+    <TextView
+        android:id="@+id/home_password_confirm"
+        style="@style/my_big_button_style"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        android:text="确定"/>
+
+</com.zhy.autolayout.AutoLinearLayout>

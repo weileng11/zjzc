@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <cn.bs.zjzc.div.TopBarView
+        android:id="@+id/feedback_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_text="发起反馈" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="150px"
+        android:src="@mipmap/zjzc_icon_smile" />
+
+    <TextView
+        android:id="@+id/feedback_tv_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="50px"
+        android:layout_marginTop="50px"
+        android:text="请输入您的建议，我们会在第一时间通知您"
+        android:textColor="@color/zjzc_orange_light"
+        android:textSize="24px" />
+
+
+    <EditText
+        android:id="@+id/feedback_et_content"
+        android:layout_width="match_parent"
+        android:layout_height="250px"
+        android:layout_marginBottom="50px"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        android:background="@drawable/edit_text_box_bg"
+        android:gravity="left|top"
+        android:padding="30px"
+        android:textColorHint="@color/zjzc_hint_text_color"
+        android:textSize="34px" />
+
+    <TextView
+        android:id="@+id/feedback_confirm"
+        style="@style/my_big_button_style"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        android:text="确定" />
+
+</com.zhy.autolayout.AutoLinearLayout>

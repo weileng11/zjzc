@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/zjzc_gp_bg_color"
+    android:orientation="vertical">
+
+    <cn.bs.zjzc.div.TopBarView
+        android:id="@+id/set_nick_name_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_text="昵称" />
+
+    <EditText
+        android:id="@+id/set_nick_et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30px"
+        android:background="@mipmap/zjzc_nick_name_edit_box"
+        android:hint="未命名"
+        android:paddingLeft="30px"
+        android:lines="1"
+        android:textColorHint="@color/zjzc_hint_text_color"
+        android:textSize="30px" />
+
+    <TextView
+        android:id="@+id/set_nick_name_save"
+        style="@style/my_big_button_style"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:text="保存" />
+
+</com.zhy.autolayout.AutoLinearLayout>

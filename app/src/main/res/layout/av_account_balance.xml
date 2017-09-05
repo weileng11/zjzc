@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/zjzc_gp_bg_color"
+    android:orientation="vertical">
+
+    <cn.bs.zjzc.div.TopBarView
+        android:id="@+id/home_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_text="账户余额" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/account_balance_info"
+        android:layout_width="match_parent"
+        android:layout_height="345px"
+        android:layout_below="@+id/home_top_bar"
+        android:layout_marginBottom="20px"
+        android:background="@color/zjzc_orange_light"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="账户余额（元）"
+            android:textColor="@color/white"
+            android:textSize="24px" />
+
+        <TextView
+            android:includeFontPadding="false"
+            android:id="@+id/account_balance_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20px"
+            android:text="150000.0"
+            android:textColor="@color/white"
+            android:textSize="56px" />
+
+        <TextView
+            android:id="@+id/account_balance_earning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="收益：0%"
+            android:textColor="@color/white"
+            android:textSize="21px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8px"
+            android:layout_marginTop="25px"
+            android:text="可提现金额"
+            android:textColor="@color/white"
+            android:textSize="24px" />
+
+        <TextView
+            android:id="@+id/account_balance_max_withdrawal_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10.0"
+            android:textColor="@color/white"
+            android:textSize="21px" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <cn.bs.zjzc.div.NormalOptionView
+        android:id="@+id/account_balance_recharge_details"
+        style="@style/my_setting_option_item_style"
+        android:layout_below="@+id/account_balance_info"
+        app:item_title="充值明细" />
+
+    <cn.bs.zjzc.div.NormalOptionView
+        android:id="@+id/account_balance_withdrawal_details"
+        style="@style/my_setting_option_item_style"
+        android:layout_below="@id/account_balance_recharge_details"
+        app:item_title="提现明细" />
+
+    <cn.bs.zjzc.div.NormalOptionView
+        android:id="@+id/account_balance_receipt_payment_details"
+        style="@style/my_setting_option_item_style"
+        android:layout_below="@id/account_balance_withdrawal_details"
+        app:item_title="收支明细" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="102px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="2px"
+        android:background="@drawable/white_bg_shadow"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/account_balance_recharge"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="充值"
+            android:textColor="@color/zjzc_hint_text_color"
+            android:textSize="28px" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="18px"
+            android:layout_marginTop="18px" />
+
+        <TextView
+            android:id="@+id/account_balance_withdraw"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="提现"
+            android:textColor="@color/zjzc_orange_light"
+            android:textSize="28px" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+</com.zhy.autolayout.AutoRelativeLayout>

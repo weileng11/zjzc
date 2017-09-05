@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                     xmlns:app="http://schemas.android.com/apk/res-auto"
+                                     android:layout_width="match_parent"
+                                     android:layout_height="match_parent"
+                                     android:background="@color/zjzc_gp_bg_color"
+                                     android:orientation="vertical">
+
+    <cn.bs.zjzc.div.TopBarView
+        android:id="@+id/feedback_list_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:right_enable="true"
+        app:right_text="发起"
+        app:title_text="反馈列表"/>
+
+    <in.srain.cube.views.ptr.PtrClassicFrameLayout
+        android:id="@+id/ptrClassicFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/feedback_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:dividerHeight="25px"/>
+    </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+</com.zhy.autolayout.AutoLinearLayout>

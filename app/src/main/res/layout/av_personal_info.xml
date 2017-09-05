@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/zjzc_gp_bg_color"
+    android:orientation="vertical">
+
+    <cn.bs.zjzc.div.TopBarView
+        android:id="@+id/home_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_text="个人信息" />
+
+    <cn.bs.zjzc.div.NormalOptionView
+        android:id="@+id/personal_info_option_header"
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        app:item_title="头像" />
+
+
+    <cn.bs.zjzc.div.NormalOptionView
+        android:id="@+id/personal_info_option_nick_name"
+        style="@style/my_setting_option_item_style"
+        app:item_title="昵称" />
+
+
+    <cn.bs.zjzc.div.NormalOptionView
+        android:id="@+id/personal_info_option_gender"
+        style="@style/my_setting_option_item_style"
+        app:item_title="性别" />
+
+    <cn.bs.zjzc.div.NormalOptionView
+        android:id="@+id/personal_info_option_age"
+        style="@style/my_setting_option_item_style"
+        app:item_title="年龄" />
+
+    <cn.bs.zjzc.div.NormalOptionView
+        android:id="@+id/personal_info_option_phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="95px"
+        app:item_title="手机号" />
+
+    <cn.bs.zjzc.div.NormalOptionView
+        android:id="@+id/personal_info_option_level"
+        style="@style/my_setting_option_item_style"
+        app:item_title="等级" />
+
+    <cn.bs.zjzc.div.NormalOptionView
+        android:id="@+id/personal_info_option_level_star"
+        style="@style/my_setting_option_item_style"
+        app:item_title="综合评价" />
+
+    <cn.bs.zjzc.div.NormalOptionView
+        android:id="@+id/personal_info_option_industry"
+        style="@style/my_setting_option_item_style"
+        android:layout_width="match_parent"
+        app:item_title="行业" />
+
+    <cn.bs.zjzc.div.NormalOptionView
+        android:id="@+id/personal_info_option_company_job"
+        style="@style/my_setting_option_item_style"
+        app:item_title="公司" />
+
+
+    <cn.bs.zjzc.div.NormalOptionView
+        android:id="@+id/personal_info_option_employer_verification"
+        style="@style/my_setting_option_item_style"
+        android:layout_marginTop="20px"
+        app:item_title="接单认证" />
+
+
+</com.zhy.autolayout.AutoLinearLayout>

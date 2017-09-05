@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <cn.bs.zjzc.div.TopBarView
+        android:id="@+id/verification_info_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_text="认证信息" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:paddingLeft="30px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="所在城市"
+            android:textColor="@color/zjzc_hint_text_color"
+            android:textSize="30px" />
+
+        <TextView
+            android:id="@+id/verification_info_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="100px"
+            android:textColor="@color/zjzc_hint_text_color"
+            android:textSize="30px" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <include layout="@layout/include_line" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:paddingLeft="30px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="真实姓名"
+            android:textColor="@color/zjzc_hint_text_color"
+            android:textSize="30px" />
+
+        <TextView
+            android:id="@+id/verification_info_real_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="100px"
+            android:text=""
+            android:textColor="@color/zjzc_hint_text_color"
+            android:textSize="30px" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <include layout="@layout/include_line" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:paddingLeft="30px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="身份证号"
+            android:textColor="@color/zjzc_hint_text_color"
+            android:textSize="30px" />
+
+        <TextView
+            android:id="@+id/verification_info_id_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="100px"
+            android:textColor="@color/zjzc_hint_text_color"
+            android:textSize="30px" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <include layout="@layout/include_line" />
+
+    <ImageView
+        android:id="@+id/verification_info_photo1"
+        android:layout_width="300px"
+        android:layout_height="230px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50px" />
+
+    <ImageView
+        android:id="@+id/verification_info_photo2"
+        android:layout_width="300px"
+        android:layout_height="230px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40px" />
+
+    <ImageView
+        android:id="@+id/verification_info_photo3"
+        android:layout_width="300px"
+        android:layout_height="230px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40px" />
+
+</com.zhy.autolayout.AutoLinearLayout>

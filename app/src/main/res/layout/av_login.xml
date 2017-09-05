@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/zjzc_gp_bg_color"
+    android:orientation="vertical">
+
+    <cn.bs.zjzc.div.TopBarView
+        android:id="@+id/login_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_text="登录" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="260px"
+        android:background="#fff"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:layout_width="210px"
+            android:layout_height="210px"
+            android:src="@mipmap/zjzc_login_logo" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="230px"
+        android:layout_marginTop="20px"
+        android:background="#fff"
+        android:orientation="vertical"
+        android:paddingLeft="20px"
+        android:paddingRight="40px">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="帐号 :"
+                android:textColor="@color/zjzc_color_grey"
+                android:textSize="30px" />
+
+            <EditText
+                android:id="@+id/login_et_account"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="60px"
+                android:background="@null"
+                android:ellipsize="end"
+                android:hint="请输入手机号码"
+                android:inputType="number"
+                android:lines="1"
+                android:text="18819419581"
+                android:maxLength="11"
+                android:textColorHint="@color/zjzc_hint_text_color2"
+                android:textSize="30px" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="密码 :"
+                android:textColor="@color/zjzc_color_grey"
+                android:textSize="30px" />
+
+            <EditText
+                android:text="123456"
+                android:id="@+id/login_et_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="60px"
+                android:background="@null"
+                android:hint="请输入密码"
+                android:inputType="textPassword"
+                android:lines="1"
+                android:textColorHint="@color/zjzc_hint_text_color2"
+                android:textSize="30px" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10px"
+        android:paddingLeft="20px"
+        android:paddingRight="40px"
+        android:paddingTop="10px">
+
+        <CheckBox
+            android:id="@+id/login_remember_passwork"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="记住密码"
+            android:textColor="@color/zjzc_color_grey"
+            android:textSize="30px"
+            app:buttonTint="@color/zjzc_orange_light" />
+
+        <TextView
+            android:id="@+id/login_forget_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="right"
+            android:paddingBottom="10px"
+            android:paddingTop="10px"
+            android:text="忘记密码？"
+            android:textColor="@color/zjzc_light_blue"
+            android:textSize="30px" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <TextView
+        android:id="@+id/btn_login"
+        style="@style/my_big_button_style"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:layout_marginTop="50px"
+        android:text="登陆" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="40px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="还没有注册？"
+            android:textColor="@color/zjzc_color_grey"
+            android:textSize="30px" />
+
+        <TextView
+            android:id="@+id/login_register_now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25px"
+            android:background="@mipmap/zjzc_register_now_bg"
+            android:gravity="center"
+            android:text="现在注册"
+            android:textColor="@color/zjzc_light_blue"
+            android:textSize="30px" />
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>

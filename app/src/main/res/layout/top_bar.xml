@@ -1,0 +1,41 @@
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="90px"
+    android:layout_marginBottom="2px"
+    android:background="@color/zjzc_topbar_bg_color">
+
+    <TextView
+        android:id="@+id/top_bar_left"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:paddingLeft="30px"
+        android:paddingRight="80px"
+        android:textColor="@color/zjzc_hint_text_color"
+        android:textSize="28px" />
+
+    <TextView
+        android:id="@+id/top_bar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center_vertical"
+        android:textColor="@color/zjzc_hint_text_color"
+        android:textSize="32px" />
+
+    <TextView
+        android:id="@+id/top_bar_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:paddingRight="30px"
+        android:textColor="@color/zjzc_hint_text_color"
+        android:textSize="28px" />
+
+
+</com.zhy.autolayout.AutoRelativeLayout>

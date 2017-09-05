@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/zjzc_gp_bg_color"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:background="@color/zjzc_topbar_bg_color"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="30px"
+        android:paddingRight="30px">
+
+        <TextView
+            android:id="@+id/input_address_select_city"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20px"
+            android:drawablePadding="10px"
+            android:drawableRight="@mipmap/zjzc_arrow_down"
+            android:gravity="center"
+            android:text="深圳"
+            android:textColor="@color/zjzc_hint_text_color"
+            android:textSize="34px" />
+
+        <EditText
+            android:id="@+id/input_address_search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@mipmap/zjzc_input_address_box_bg"
+            android:hint="请输入地址"
+            android:paddingLeft="30px"
+            android:paddingRight="30px"
+            android:singleLine="true"
+            android:textColorHint="@color/zjzc_hint_text_color"
+            android:textSize="34px" />
+
+        <TextView
+            android:id="@+id/input_address_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:text="取消"
+            android:textColor="@color/zjzc_orange_light"
+            android:textSize="34px" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#bebebe" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/input_often_address_layout"
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+
+        <cn.bs.zjzc.div.DrawableCenterTextView
+            android:id="@+id/input_address_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:drawableLeft="@mipmap/zjzc_icon_home"
+            android:drawablePadding="10px"
+            android:gravity="center_vertical"
+            android:onClick="clickBTN"
+            android:text="家"
+            android:textColor="@color/zjzc_hint_text_color"
+            android:textSize="34px" />
+
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="12px"
+            android:layout_marginTop="12px"
+            android:background="#dbdbdb" />
+
+
+        <cn.bs.zjzc.div.DrawableCenterTextView
+            android:id="@+id/input_address_company"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:drawableLeft="@mipmap/zjzc_icon_company"
+            android:drawablePadding="10px"
+            android:gravity="center_vertical"
+            android:onClick="clickBTN"
+            android:text="公司"
+            android:textColor="@color/zjzc_hint_text_color"
+            android:textSize="34px" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#bebebe" />
+
+    <ListView
+        android:id="@+id/input_address_history"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/emptyView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="暂无结果" />
+</com.zhy.autolayout.AutoLinearLayout>

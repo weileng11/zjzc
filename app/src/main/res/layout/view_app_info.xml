@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                     android:layout_width="match_parent"
+                                     android:layout_height="match_parent"
+                                     android:orientation="vertical"
+                                     android:paddingBottom="20px"
+                                     android:paddingTop="10px"
+    >
+
+
+    <TextView
+        android:id="@+id/functionLab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="【新增】"
+        android:textColor="@color/cube_holo_orange_dark"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/addFunction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5px"
+        android:lineSpacingExtra="5px"
+        android:paddingLeft="15px"
+        android:textSize="16sp"
+        android:typeface="serif"/>
+
+    <TextView
+        android:id="@+id/optimizeLab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="【优化】"
+        android:textColor="@color/cube_holo_orange_dark"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/optimize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5px"
+        android:lineSpacingExtra="5px"
+        android:paddingLeft="15px"
+        android:textSize="16sp"
+        android:typeface="serif"/>
+
+    <com.daimajia.numberprogressbar.NumberProgressBar
+        android:id="@+id/number_progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5px"
+        android:lineSpacingExtra="5px"
+        android:paddingLeft="15px"
+        android:text="安装包已经为您下载好了"
+        android:textColor="@color/cube_holo_orange_dark"
+        android:textSize="16sp"
+        android:typeface="serif"
+        android:visibility="gone"/>
+
+</com.zhy.autolayout.AutoLinearLayout>

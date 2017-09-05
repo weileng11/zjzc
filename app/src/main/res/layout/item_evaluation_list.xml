@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="40px">
+
+    <TextView
+        android:id="@+id/user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="138********"
+        android:textColor="@color/zjzc_black"
+        android:textSize="23px" />
+
+    <RatingBar
+        android:id="@+id/rating_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30px"
+        android:layout_toRightOf="@+id/user"
+        android:isIndicator="true"
+        android:progressDrawable="@drawable/evaluation_star" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="2015-10-15"
+        android:textColor="@color/zjzc_hint_text_color"
+        android:textSize="23px" />
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user"
+        android:layout_marginTop="20px"
+        android:text="昨天中午下单今天上午就收到了,就算同城快递也看比顺风了,卖家包装发的很用心,"
+        android:textColor="@color/zjzc_hint_text_color"
+        android:textSize="21px" />
+
+
+</com.zhy.autolayout.AutoRelativeLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0"
+    android:orientation="vertical">
+
+    <cn.bs.zjzc.div.TopBarView
+        android:id="@+id/company_job_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_text="公司职业" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="251px"
+        android:layout_marginBottom="60px"
+        android:layout_marginLeft="25px"
+        android:layout_marginRight="25px"
+        android:layout_marginTop="25px"
+        android:background="@drawable/corner_bg_white_r20_normal"
+        android:orientation="vertical">
+
+        <com.zhy.autolayout.AutoFrameLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="30px"
+                android:text="公司"
+                android:textColor="@color/zjzc_orange_light"
+                android:textSize="30px" />
+
+            <EditText
+                android:lines="1"
+                android:id="@+id/company_job_et_company_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="140px"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="输入公司名称"
+                android:textColorHint="@color/zjzc_color_grey_light"
+                android:textSize="30px" />
+
+        </com.zhy.autolayout.AutoFrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:background="#f0f0f0" />
+
+        <com.zhy.autolayout.AutoFrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="30px"
+                android:text="职业"
+                android:textColor="@color/zjzc_orange_light"
+                android:textSize="30px" />
+
+            <EditText
+                android:lines="1"
+                android:id="@+id/company_job_et_job"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="输入从事职业"
+                android:layout_marginLeft="140px"
+                android:textColorHint="@color/zjzc_color_grey_light"
+                android:textSize="30px" />
+        </com.zhy.autolayout.AutoFrameLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <TextView
+        android:id="@+id/company_job_btn_save"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:text="保存"
+        style="@style/my_big_button_style" />
+
+</com.zhy.autolayout.AutoLinearLayout>

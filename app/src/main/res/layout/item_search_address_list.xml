@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fdfdfd"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45px"
+        android:layout_marginTop="10px"
+        android:text="金帝一号"
+        android:textColor="#ababab"
+        android:textSize="34px" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="45px"
+        android:layout_marginTop="10px"
+        android:layout_marginBottom="10px"
+        android:layout_toRightOf="@+id/order_detail_address_take"
+        android:text="福强路与沙尾路交接处"
+        android:textColor="#ababab"
+        android:textSize="26px" />
+
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <cn.bs.zjzc.div.TopBarView
+        android:id="@+id/feedback_detail_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        app:title_text="反馈回复" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/home_top_bar"
+        android:background="@drawable/corner_bg_white_r20_shadow"
+        android:orientation="vertical"
+        android:paddingLeft="30px"
+        android:paddingRight="30px">
+
+        <TextView
+            android:id="@+id/feedback_detail_tv_date"
+            android:layout_width="match_parent"
+            android:layout_height="103px"
+            android:gravity="center_vertical"
+            android:text="2015年8月8日"
+            android:textColor="#adadad"
+            android:textSize="26px" />
+
+
+        <TextView
+            android:id="@+id/feedback_detail_tv_feedback_content"
+            android:layout_width="match_parent"
+            android:layout_height="130px"
+            android:gravity="center_vertical"
+            android:text="很遗憾，您申请成为接单用户未通过审核（请按照图例重新上传照片）。如有疑问，请指点客服，谢谢."
+            android:textColor="#adadad"
+            android:textSize="26px" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#e9e9e9" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="103px"
+            android:gravity="center_vertical"
+            android:text="系统回复"
+            android:textColor="#adadad"
+            android:textSize="26px" />
+
+        <TextView
+            android:id="@+id/feedback_detail_tv_reply"
+            android:layout_width="match_parent"
+            android:layout_height="130px"
+            android:gravity="center_vertical"
+            android:text="很遗憾，您申请成为接单用户未通过审核（请按照图例重新上传照片）。如有疑问，请指点客服，谢谢."
+            android:textColor="#adadad"
+            android:textSize="26px" />
+
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoFrameLayout
+        android:id="@+id/delete"
+        android:layout_width="match_parent"
+        android:layout_height="102px"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="1px"
+        android:background="@drawable/white_bg_shadow">
+
+        <TextView
+            android:id="@+id/feedback_detail_btn_delete"
+            android:layout_width="243px"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|center_vertical"
+            android:background="@color/zjzc_orange_light"
+            android:gravity="center"
+            android:text="删除"
+            android:textColor="@color/white"
+            android:textSize="30px" />
+
+    </com.zhy.autolayout.AutoFrameLayout>
+
+</com.zhy.autolayout.AutoRelativeLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/zjzc_gp_bg_color"
+    android:orientation="vertical">
+
+    <cn.bs.zjzc.div.TopBarView
+        android:id="@+id/custom_service_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:right_drawable="@mipmap/zjzc_icon_search"
+        app:right_enable="true"
+        app:title_text="客服与帮助" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="305px"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="30px"
+        android:paddingTop="30px">
+
+
+        <com.zhy.autolayout.AutoFrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/custom_service_call_center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawablePadding="20px"
+                android:drawableTop="@mipmap/zjzc_icon_service_phone"
+                android:text="电话客服"
+                android:textColor="@color/zjzc_hint_text_color"
+                android:textSize="26px" />
+        </com.zhy.autolayout.AutoFrameLayout>
+
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#ceced1" />
+
+        <com.zhy.autolayout.AutoFrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/custom_service_feedback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawablePadding="20px"
+                android:drawableTop="@mipmap/zjzc_icon_feedback_"
+                android:text="意见反馈"
+                android:textColor="@color/zjzc_hint_text_color"
+                android:textSize="26px" />
+        </com.zhy.autolayout.AutoFrameLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <cn.bs.zjzc.div.NormalOptionView
+        android:id="@+id/custom_service_faq_problem"
+        style="@style/my_setting_option_item_style"
+        android:layout_marginTop="20px"
+        app:item_right_icon="@mipmap/zjzc_arrow_up"
+        app:item_title="常见问题" />
+
+    <in.srain.cube.views.ptr.PtrClassicFrameLayout
+        android:id="@+id/custom_service_ptr_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/custom_service_faq_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null" />
+    </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+
+
+</com.zhy.autolayout.AutoLinearLayout>

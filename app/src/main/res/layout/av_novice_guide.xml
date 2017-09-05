@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0"
+    android:orientation="vertical">
+
+    <cn.bs.zjzc.div.HomeTopBarView
+        android:id="@+id/home_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <com.zhy.autolayout.AutoFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="20px"
+        android:layout_weight="1"
+        android:background="@drawable/corner_bg_white_r20_shadow"></com.zhy.autolayout.AutoFrameLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30px"
+        android:gravity="center_vertical"
+        android:padding="20px">
+
+        <TextView
+            android:id="@+id/btn_register"
+            style="@style/my_normal_button_style"
+            android:layout_alignParentLeft="true"
+            android:text="注册接单" />
+
+        <TextView
+            android:id="@+id/btn_novice_guide"
+            style="@style/my_normal_button_style"
+            android:layout_alignParentRight="true"
+            android:text="新手引导" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

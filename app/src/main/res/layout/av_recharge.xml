@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/zjzc_gp_bg_color"
+    android:orientation="vertical">
+
+    <cn.bs.zjzc.div.TopBarView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        app:title_text="账户充值" />
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="40px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="当前用户："
+            android:textColor="@color/zjzc_black"
+            android:textSize="30px" />
+
+        <TextView
+            android:id="@+id/recharge_current_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="250px"
+            android:text="10086"
+            android:textColor="@color/zjzc_hint_text_color"
+            android:textSize="30px" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <include layout="@layout/include_line" />
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="40px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="账户余额："
+            android:textColor="@color/zjzc_black"
+            android:textSize="30px" />
+
+        <TextView
+            android:id="@+id/recharge_account_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="250px"
+            android:text="10086.00"
+            android:textColor="@color/zjzc_orange_light"
+            android:textSize="30px" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <include layout="@layout/include_line" />
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="40px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="充值金额："
+            android:textColor="@color/zjzc_black"
+            android:textSize="30px" />
+
+        <EditText
+            android:id="@+id/recharge_money"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="250px"
+            android:background="@null"
+            android:hint="请输入充值金额"
+            android:inputType="numberDecimal"
+            android:textColorHint="@color/zjzc_hint_text_color"
+            android:textSize="30px" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <include layout="@layout/include_line" />
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="40px"
+        android:paddingRight="40px">
+
+        <TextView
+            android:id="@+id/id_select_recharge_way"
+            android:layout_width="match_parent"
+            android:layout_height="90px"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:text="请选择充值方式："
+            android:textColor="@color/zjzc_black"
+            android:textSize="30px" />
+
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/id_select_recharge_way"
+            android:background="#eaebed" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingBottom="60px"
+            android:paddingLeft="40px"
+            android:paddingRight="40px"
+            android:paddingTop="60px">
+
+            <TextView
+                android:id="@+id/id_alipay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line"
+                android:text="支付宝"
+                android:textColor="@color/zjzc_black"
+                android:textSize="30px" />
+
+            <TextView
+                android:id="@+id/id_wechat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/id_alipay"
+                android:layout_marginTop="80px"
+                android:text="微信"
+                android:textColor="@color/zjzc_black"
+                android:textSize="30px" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <cn.bs.zjzc.div.AutoRadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/id_alipay"
+            android:paddingBottom="60px"
+            android:paddingLeft="40px"
+            android:paddingRight="40px"
+            android:paddingTop="60px">
+
+            <RadioButton
+                android:id="@+id/recharge_check_alipay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/id_alipay"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/radio_button_bg"
+                android:button="@null" />
+
+            <RadioButton
+                android:id="@+id/recharge_check_wechat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/id_wechat"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="80px"
+                android:background="@drawable/radio_button_bg"
+                android:button="@null" />
+        </cn.bs.zjzc.div.AutoRadioGroup>
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="102px"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="1px"
+        android:background="@drawable/white_bg_shadow">
+
+        <TextView
+            android:id="@+id/recharge_confirm"
+            android:layout_width="243px"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:layout_gravity="right|center_vertical"
+            android:background="@color/zjzc_orange_light"
+            android:gravity="center"
+            android:text="立即充值"
+            android:textColor="@color/white"
+            android:textSize="30px" />
+    </com.zhy.autolayout.AutoFrameLayout>
+</com.zhy.autolayout.AutoLinearLayout>
+

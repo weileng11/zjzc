@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                     xmlns:app="http://schemas.android.com/apk/res-auto"
+                                     android:layout_width="match_parent"
+                                     android:layout_height="match_parent"
+                                     android:clickable="true"
+                                     android:background="@color/zjzc_gp_bg_color"
+                                     android:orientation="vertical">
+
+    <cn.bs.zjzc.div.TopBarView
+        android:id="@+id/order_setting_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:left_drawable_enable="false"
+        app:left_text="取消"
+        app:right_enable="true"
+        app:right_text="保存"
+        app:title_text="订单设置"/>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:layout_marginBottom="30px"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="35px"
+        android:layout_marginTop="20px"
+        android:background="@drawable/white_bg_shadow2"
+        android:paddingLeft="28px"
+        android:paddingRight="28px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="接单设置"
+            android:textColor="#a8a8a8"
+            android:textSize="30px"/>
+
+        <Spinner
+            android:id="@+id/order_setting_spinner_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="15px"
+            android:layout_marginTop="15px"
+            android:background="@mipmap/zjzc_order_setting_distance"
+            android:entries="@array/str_array_order_setting_distance"/>
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/order_type_layout"
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="35px"
+        android:background="@drawable/white_bg_shadow2"
+        android:paddingLeft="28px"
+        android:paddingRight="28px">
+
+        <TextView
+            android:id="@+id/order_tiype_lab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="接单类型"
+            android:textColor="#a8a8a8"
+            android:textSize="30px"/>
+
+        <TextView
+            android:id="@+id/order_type_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text=" >"
+            android:textSize="28px"/>
+
+        <TextView
+            android:id="@+id/order_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/order_type_more"
+            android:lines="1"
+            android:singleLine="true"
+            android:layout_marginLeft="140px"
+            android:textSize="28px"/>
+
+        <!-- <Spinner
+             android:id="@+id/order_setting_spinner_type"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+             android:layout_centerVertical="true"
+             android:layout_marginBottom="15px"
+             android:layout_marginTop="15px"
+             android:background="@mipmap/zjzc_order_setting_type"
+             android:entries="@array/str_array_order_setting_type" />-->
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:layout_marginBottom="30px"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="35px"
+        android:layout_marginTop="30px"
+        android:background="@drawable/white_bg_shadow2"
+        android:paddingLeft="28px"
+        android:paddingRight="28px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="列表自动刷新"
+            android:textColor="#a8a8a8"
+            android:textSize="30px"/>
+
+        <cn.bs.zjzc.div.MyCheckBox
+            android:id="@+id/order_setting_auto_flush_switch"
+            style="@style/normal_check_box_style"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="35px"
+        android:background="@drawable/white_bg_shadow2"
+        android:paddingLeft="28px"
+        android:paddingRight="28px">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="接受派单"
+            android:textColor="#a8a8a8"
+            android:textSize="30px"/>
+
+        <cn.bs.zjzc.div.MyCheckBox
+            android:id="@+id/order_setting_receive_order_switch"
+            style="@style/normal_check_box_style"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30px"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="35px"
+        android:layout_marginTop="30px"
+        android:background="@drawable/white_bg_shadow2"
+        android:orientation="vertical"
+        android:paddingLeft="28px"
+        android:paddingRight="28px">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="88px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="回家接单"
+                android:textColor="#a8a8a8"
+                android:textSize="30px"/>
+
+            <cn.bs.zjzc.div.MyCheckBox
+                android:id="@+id/order_setting_home_switch"
+                style="@style/normal_check_box_style"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="88px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="上班接单"
+                android:textColor="#a8a8a8"
+                android:textSize="30px"/>
+
+            <cn.bs.zjzc.div.MyCheckBox
+                android:id="@+id/order_setting_work_switch"
+                style="@style/normal_check_box_style"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+        </com.zhy.autolayout.AutoRelativeLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+</com.zhy.autolayout.AutoLinearLayout>

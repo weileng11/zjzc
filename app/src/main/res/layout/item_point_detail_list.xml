@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="164px"
+    android:paddingLeft="40px"
+    android:paddingRight="40px">
+
+    <TextView
+        android:id="@+id/subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="35px"
+        android:layout_marginTop="27px"
+        android:text="用户注册"
+        android:textColor="@color/zjzc_black"
+        android:textSize="30px" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/subject"
+        android:text="2015-10-25 10:16:16"
+        android:textColor="@color/zjzc_hint_text_color"
+        android:textSize="24px" />
+
+    <TextView
+        android:id="@+id/point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="+10"
+        android:textColor="@color/zjzc_orange_light"
+        android:textSize="24px" />
+
+</com.zhy.autolayout.AutoRelativeLayout>

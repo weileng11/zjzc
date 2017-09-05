@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="TopBarView">
+        <!-- 左边菜单 -->
+        <attr name="left_text" format="string|reference" />
+        <!-- 中间标题 -->
+        <attr name="title_text" format="string|reference" />
+        <!-- 右边菜单 -->
+        <attr name="right_text" format="string|reference" />
+
+        <!-- 右边菜单颜色 -->
+        <attr name="right_text_color" format="color|reference" />
+
+        <!-- 左边的图片 -->
+        <attr name="left_drawable" format="reference" />
+        <!-- 标题右边的图片 -->
+        <attr name="title_drawable" format="reference" />
+        <!-- 右边的图片 -->
+        <attr name="right_drawable" format="reference" />
+
+        <!-- 左边菜单是否可见 -->
+        <attr name="left_enable" format="boolean" />
+        <!-- 右边菜单是否可见 -->
+        <attr name="right_enable" format="boolean" />
+        <!-- 中间标题是否可见 -->
+        <attr name="title_enable" format="boolean" />
+
+        <!-- 是否隐藏左边返回图标 -->
+        <attr name="left_drawable_enable" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="HomeTopBarView">
+        <!-- 搜索按钮是否可见 -->
+        <attr name="search_enable" format="boolean" />
+        <!-- 广告按钮是否可见 -->
+        <attr name="advertisement_enable" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="NormalOptionView">
+        <!-- 标题 -->
+        <attr name="item_title" format="string|reference" />
+        <!-- 标题字体颜色 -->
+        <attr name="title_text_color" format="color|reference" />
+        <!-- 左边标题的图标 -->
+        <attr name="title_left_drawable" format="reference" />
+        <!-- 内容 -->
+        <attr name="item_content" format="string|reference" />
+        <!-- 内容字体颜色 -->
+        <attr name="content_text_color" format="color|reference" />
+        <!-- 右边图标是否可见 -->
+        <attr name="item_arrow_enable" format="boolean" />
+        <!-- 右边图标是否可见 -->
+        <attr name="item_right_icon" format="reference" />
+    </declare-styleable>
+
+    <!-- 圆角图片样式 -->
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+        <attr name="border_overlay" format="boolean" />
+    </declare-styleable>
+
+    <!-- 自定义checkBox样式 -->
+    <declare-styleable name="MyCheckBox">
+        <attr name="checked_text" format="string|reference" />
+        <attr name="unchecked_text" format="string|reference" />
+    </declare-styleable>
+
+</resources>

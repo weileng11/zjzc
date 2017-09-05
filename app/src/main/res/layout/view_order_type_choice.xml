@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                     xmlns:app="http://schemas.android.com/apk/res-auto"
+                                     android:layout_width="match_parent"
+                                     android:layout_height="match_parent"
+                                     android:background="@color/zjzc_gp_bg_color"
+                                     android:orientation="vertical">
+
+    <cn.bs.zjzc.div.TopBarView
+        android:id="@+id/order_type_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:left_drawable_enable="false"
+        app:left_text="取消"
+        app:right_enable="true"
+        app:right_text="保存"
+        app:title_text="接单类型设置"/>
+
+
+    <!--<ListView
+        android:id="@+id/lv_orderType"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="13px"
+        android:layout_marginRight="13px"
+        android:dividerHeight="20px"/>-->
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/vg_orderType_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/all"
+            style="@style/radioButtonStyle"
+            android:text="全部"/>
+
+        <CheckBox
+            android:id="@+id/waimai"
+            style="@style/radioButtonStyle"
+            android:text="外面配送"/>
+
+        <CheckBox
+            android:id="@+id/daimai"
+            style="@style/radioButtonStyle"
+            android:text="代买服务"/>
+
+        <CheckBox
+            android:id="@+id/daiban"
+            style="@style/radioButtonStyle"
+            android:text="代办服务"/>
+
+        <CheckBox
+            android:id="@+id/cheyou"
+            style="@style/radioButtonStyle"
+            android:text="车友之家"/>
+
+        <CheckBox
+            android:id="@+id/tongcheng"
+            style="@style/radioButtonStyle"
+            android:text="同城速递"/>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="30px"
+    android:paddingRight="30px">
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="match_parent"
+        android:layout_height="104px"
+        android:drawableLeft="@mipmap/zjzc_icon_news_new"
+        android:drawablePadding="20px"
+        android:gravity="center_vertical"
+        android:text="2015-08-05 8.00.00"
+        android:textColor="@color/zjzc_orange_light"
+        android:textSize="24px" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#e9e9e9" />
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="30px"
+        android:paddingTop="30px"
+        android:text="很遗憾,您申请成为价单用户为通过审核"
+        android:textColor="@color/zjzc_black"
+        android:textSize="26px" />
+
+</com.zhy.autolayout.AutoLinearLayout>

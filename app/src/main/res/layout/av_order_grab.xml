@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                     xmlns:app="http://schemas.android.com/apk/res-auto"
+                                     android:layout_width="match_parent"
+                                     android:layout_height="match_parent"
+                                     android:background="@color/zjzc_gp_bg_color"
+                                     android:orientation="vertical">
+
+    <cn.bs.zjzc.div.TopBarView
+        android:id="@+id/order_detail_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_text="订单详情"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@+id/contact_order_user_layout"
+        android:layout_below="@+id/home_top_bar"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="140px">
+
+            <com.zhy.autolayout.AutoFrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="95px"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingLeft="50px"
+                android:paddingRight="50px">
+
+                <TextView
+                    android:id="@+id/order_grab_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:text="订单：10000000000000000"
+                    android:textColor="@color/zjzc_hint_text_color"
+                    android:textSize="28px"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_gravity="bottom"
+                    android:background="#efefef"/>
+
+            </com.zhy.autolayout.AutoFrameLayout>
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="114px"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingLeft="50px"
+                android:paddingRight="50px">
+
+                <TextView
+                    android:id="@+id/order_grab_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="18px"
+                    android:drawableLeft="@mipmap/zjzc_icon_clock"
+                    android:drawablePadding="10px"
+                    android:text="现在"
+                    android:textColor="@color/zjzc_black"
+                    android:textSize="28px"/>
+
+                <TextView
+                    android:id="@+id/order_grab_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/order_grab_time"
+                    android:text="外卖配送"
+                    android:textColor="@color/zjzc_black"
+                    android:textSize="21px"/>
+
+                <TextView
+                    android:id="@+id/order_grab_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="5.00元"
+                    android:textColor="@color/zjzc_orange_light"
+                    android:textSize="36px"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="#efefef"/>
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/order_grab_takeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingBottom="25px"
+                    android:paddingLeft="50px"
+                    android:paddingRight="50px"
+                    android:paddingTop="25px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:drawableLeft="@mipmap/zjzc_icon_green_circle"
+                        android:drawablePadding="10px"
+                        android:text="取"
+                        android:textColor="@color/zjzc_hint_text_color"
+                        android:textSize="21px"/>
+
+                    <TextView
+                        android:id="@+id/order_grab_address_take"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="80px"
+                        android:text="金地工业区"
+                        android:textColor="@color/zjzc_black"
+                        android:textSize="28px"/>
+
+                    <TextView
+                        android:id="@+id/order_grab_address_info_take"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="18px"
+                        android:layout_toRightOf="@+id/order_grab_address_take"
+                        android:text="3楼201室"
+                        android:textColor="@color/zjzc_hint_text_color"
+                        android:textSize="28px"/>
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingLeft="50px"
+                    android:paddingRight="50px">
+
+                    <TextView
+                        android:id="@+id/order_grab_contacts_take"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="80px"
+                        android:drawableLeft="@mipmap/zjzc_icon_contacts"
+                        android:drawablePadding="8px"
+                        android:text="联系王姐"
+                        android:textColor="@color/zjzc_hint_text_color"
+                        android:textSize="21px"/>
+
+                    <TextView
+                        android:id="@+id/order_grab_contacts_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="10px"
+                        android:layout_marginRight="174px"
+                        android:drawableLeft="@mipmap/zjzc_icon_distance"
+                        android:drawablePadding="8px"
+                        android:text="查看地址"
+                        android:textColor="@color/zjzc_hint_text_color"
+                        android:textSize="21px"/>
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60px"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:paddingLeft="50px"
+                    android:paddingRight="50px">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="120px"
+                        android:background="#efefef"/>
+
+                    <TextView
+                        android:id="@+id/order_grab_distance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20px"
+                        android:text="相距30KM"
+                        android:textColor="@color/zjzc_hint_text_color"
+                        android:textSize="21px"/>
+                </com.zhy.autolayout.AutoRelativeLayout>
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:id="@+id/order_detail_delivery_layout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="25px"
+                android:paddingLeft="50px"
+                android:paddingRight="50px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/order_detail_address_delivery"
+                    android:layout_alignParentLeft="true"
+                    android:drawableLeft="@mipmap/zjzc_icon_red_circle"
+                    android:drawablePadding="10px"
+                    android:text="送"
+                    android:textColor="@color/zjzc_hint_text_color"
+                    android:textSize="21px"/>
+
+                <TextView
+                    android:id="@+id/order_grab_address_delivery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="80px"
+                    android:text="金地工业区"
+                    android:textColor="@color/zjzc_black"
+                    android:textSize="28px"/>
+
+                <TextView
+                    android:id="@+id/order_grab_floor_info_delivery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/order_detail_address_delivery"
+                    android:layout_marginLeft="18px"
+                    android:layout_toRightOf="@+id/order_grab_address_delivery"
+                    android:text="3楼201室"
+                    android:textColor="@color/zjzc_hint_text_color"
+                    android:textSize="28px"/>
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:id="@+id/order_detail_delivery_layout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="25px"
+                android:paddingLeft="50px"
+                android:paddingRight="50px">
+
+                <TextView
+                    android:id="@+id/order_grab_contacts_delivery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80px"
+                    android:drawableLeft="@mipmap/zjzc_icon_contacts"
+                    android:drawablePadding="8px"
+                    android:text="联系王姐"
+                    android:textColor="@color/zjzc_hint_text_color"
+                    android:textSize="21px"/>
+
+                <TextView
+                    android:id="@+id/order_grab_check_address_delivery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="10px"
+                    android:layout_marginRight="174px"
+                    android:drawableLeft="@mipmap/zjzc_icon_distance"
+                    android:drawablePadding="8px"
+                    android:text="查看地址"
+                    android:textColor="@color/zjzc_hint_text_color"
+                    android:textSize="21px"/>
+
+                <View
+                    android:id="@+id/order_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_below="@+id/order_detail_check_address_delivery"
+                    android:layout_marginRight="120px"
+                    android:layout_marginTop="15px"
+                    android:background="#efefef"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/order_detail_service_lab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/order_detail_contacts_delivery"
+                    android:layout_below="@+id/order_line"
+                    android:layout_marginTop="15px"
+                    android:text="服务名称：打扫卫生"
+                    android:textColor="@color/zjzc_black"
+                    android:textSize="30px"
+                    android:visibility="gone"/>
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:id="@+id/order_detail_tip_layout"
+                android:layout_width="match_parent"
+                android:layout_height="85px"
+                android:layout_marginTop="20px"
+                android:background="@drawable/white_bg_shadow"
+                android:paddingLeft="50px"
+                android:paddingRight="50px">
+
+                <ImageView
+                    android:id="@+id/irder_detail_pay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15px"
+                    android:src="@mipmap/zjzc_icon_tip"/>
+
+                <TextView
+                    android:id="@+id/order_detail_tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10px"
+                    android:layout_toRightOf="@+id/irder_detail_pay"
+                    android:gravity="center"
+                    android:text="小费2元"
+                    android:textColor="@color/zjzc_orange_light"
+                    android:textSize="28px"/>
+
+                <TextView
+                    android:id="@+id/order_detail_preferential"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/order_detail_tip"
+                    android:text="优惠2元"
+                    android:textColor="@color/zjzc_orange_light"
+                    android:textSize="28px"
+                    />
+
+                <TextView
+                    android:id="@+id/order_detail_real_pay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="实付：4.00元"
+                    android:textColor="@color/zjzc_black"
+                    android:textSize="28px"/>
+
+                <ImageView
+                    android:id="@+id/iv_payTypeIcon"
+                    android:layout_width="33px"
+                    android:layout_height="30px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5px"
+                    android:layout_marginRight="10px"
+                    android:layout_toLeftOf="@+id/order_detail_real_pay"
+                    android:background="@mipmap/zjzc_icon_alipay2"/>
+
+                <ImageView
+                    android:id="@+id/iv_payTypeIcon2"
+                    android:layout_width="33px"
+                    android:layout_height="30px"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/iv_payTypeIcon"
+                    android:background="@mipmap/zjzc_icon_alipay2"
+                    android:visibility="gone"/>
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+
+            <TextView
+                android:id="@+id/order_detail_insured_fee"
+                android:layout_width="match_parent"
+                android:layout_height="85px"
+                android:layout_marginTop="20px"
+                android:background="@drawable/white_bg_shadow"
+                android:gravity="center_vertical"
+                android:paddingLeft="50px"
+                android:paddingRight="50px"
+                android:text="保价费：2.00元"
+                android:textColor="@color/zjzc_hint_text_color"
+                android:textSize="28px"/>
+
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/order_detail_remark_layout"
+                android:layout_width="match_parent"
+                android:layout_height="296px"
+                android:layout_marginTop="20px"
+                android:background="@drawable/white_bg_shadow"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingLeft="50px"
+                android:paddingRight="50px"
+                >
+
+                <TextView
+                    android:id="@+id/order_detail_remark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="备注:小心汤汁泄漏,一共有3分,如下图"
+                    android:textColor="@color/zjzc_hint_text_color"
+                    android:textSize="28px"/>
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:id="@+id/order_detail_photoLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30px">
+
+                    <ImageView
+                        android:id="@+id/order_detail_photo1"
+                        android:layout_width="0dp"
+                        android:layout_height="158px"
+                        android:layout_weight="1"
+                        android:scaleType="fitXY"/>
+
+                    <ImageView
+                        android:id="@+id/order_detail_photo2"
+                        android:layout_width="0dp"
+                        android:layout_height="158px"
+                        android:layout_marginLeft="6px"
+                        android:layout_marginRight="6px"
+                        android:layout_weight="1"
+                        android:scaleType="fitXY"/>
+
+                    <ImageView
+                        android:id="@+id/order_detail_photo3"
+                        android:layout_width="0dp"
+                        android:layout_height="158px"
+                        android:layout_marginRight="6px"
+                        android:layout_weight="1"
+                        android:scaleType="fitXY"/>
+
+                    <ImageView
+                        android:id="@+id/order_detail_photo4"
+                        android:layout_width="0dp"
+                        android:layout_height="158px"
+                        android:layout_weight="1"
+                        android:scaleType="fitXY"/>
+                </com.zhy.autolayout.AutoLinearLayout>
+            </com.zhy.autolayout.AutoLinearLayout>
+
+
+            <TextView
+                android:id="@+id/order_detail_order_time"
+                android:layout_width="match_parent"
+                android:layout_height="87px"
+                android:layout_marginTop="20px"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="50px"
+                android:paddingRight="50px"
+                android:text="保价费：2.00元"
+                android:textColor="@color/zjzc_hint_text_color"
+                android:textSize="28px"
+                android:visibility="gone"/>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/order_detail_receive_time_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingLeft="50px"
+                android:paddingRight="50px"
+                android:visibility="gone">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#efefef"/>
+
+                <TextView
+                    android:id="@+id/order_detail_receive_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="87px"
+                    android:gravity="center"
+                    android:text="保价费：2.00元"
+                    android:textColor="@color/zjzc_hint_text_color"
+                    android:textSize="28px"/>
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/order_detail_take_time_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingLeft="50px"
+                android:paddingRight="50px"
+                android:visibility="gone">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#efefef"/>
+
+                <TextView
+                    android:id="@+id/order_detail_take_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="87px"
+                    android:gravity="center"
+                    android:text="保价费：2.00元"
+                    android:textColor="@color/zjzc_hint_text_color"
+                    android:textSize="28px"/>
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/order_detail_done_time_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingLeft="50px"
+                android:paddingRight="50px"
+                android:visibility="gone">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#efefef"/>
+
+                <TextView
+                    android:id="@+id/order_detail_done_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="87px"
+                    android:gravity="center"
+                    android:text="保价费：2.00元"
+                    android:textColor="@color/zjzc_hint_text_color"
+                    android:textSize="28px"/>
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+    </ScrollView>
+
+    <com.zhy.autolayout.AutoFrameLayout
+        android:id="@+id/order_detail_evaluation_layout"
+        android:layout_width="match_parent"
+        android:layout_height="102px"
+        android:layout_marginBottom="1px"
+        android:background="@drawable/white_bg_shadow">
+
+        <TextView
+            android:id="@+id/confirmGrabOrder"
+            android:layout_width="243px"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|center_vertical"
+            android:background="@color/zjzc_orange_light"
+            android:gravity="center"
+            android:text="确认抢单"
+            android:textColor="@color/white"
+            android:textSize="30px"/>
+
+    </com.zhy.autolayout.AutoFrameLayout>
+</com.zhy.autolayout.AutoLinearLayout>

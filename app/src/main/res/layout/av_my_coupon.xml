@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                     xmlns:app="http://schemas.android.com/apk/res-auto"
+                                     android:layout_width="match_parent"
+                                     android:layout_height="match_parent"
+                                     android:background="@color/zjzc_gp_bg_color"
+                                     android:orientation="vertical">
+
+    <cn.bs.zjzc.div.TopBarView
+        android:id="@+id/my_coupon_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_text="我的优惠券"/>
+
+    <in.srain.cube.views.ptr.PtrClassicFrameLayout
+        android:id="@+id/ptrClassicFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/zjzc_gp_bg_color"
+                android:orientation="vertical">
+
+                <com.zhy.autolayout.AutoFrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="90px"
+                    android:background="@color/white"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/my_coupon_not_use_coupon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:drawableLeft="@mipmap/zjzc_icon_not_use_coupon"
+                        android:drawablePadding="20px"
+                        android:gravity="center"
+                        android:text="不使用优惠券"
+                        android:textColor="@color/zjzc_orange_dark"
+                        android:textSize="32px"/>
+                </com.zhy.autolayout.AutoFrameLayout>
+
+                <TextView
+                    android:id="@+id/my_coupon_use_rules"
+                    android:layout_width="wrap_content"
+                    android:layout_height="90px"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="30px"
+                    android:drawableLeft="@mipmap/zjzc_icon_coupon_use_rules"
+                    android:drawablePadding="10px"
+                    android:gravity="center"
+                    android:text="使用规则"
+                    android:textColor="#2993ff"
+                    android:textSize="24px"/>
+
+
+                <cn.bs.zjzc.div.MyListView
+                    android:id="@+id/my_coupon_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/zjzc_gp_bg_color"
+                    android:paddingLeft="18px"
+                    android:paddingRight="18px"
+                    android:verticalSpacing="25px"
+                    />
+
+                <TextView
+                    android:id="@+id/emptyView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="无更多数据"
+                    android:textSize="20sp"
+                    android:typeface="serif"/>
+
+
+                <TextView
+                    android:id="@+id/buttomTag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="right"
+                    android:layout_marginBottom="20px"
+                    android:layout_marginRight="30px"
+                    android:layout_marginTop="20px"
+                    android:text="查看过期券 >>"
+                    android:textSize="18sp"
+                    android:typeface="serif"
+                    android:visibility="gone"
+                    />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+        </ScrollView>
+    </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+</com.zhy.autolayout.AutoLinearLayout>

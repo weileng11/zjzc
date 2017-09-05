@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="165px"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingBottom="40px"
+    android:paddingLeft="40px"
+    android:paddingRight="40px"
+    android:paddingTop="30px">
+
+    <TextView
+        android:id="@+id/subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="支付宝充值"
+        android:textColor="@color/zjzc_black"
+        android:textSize="34px" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="01月26日 10:16:16"
+        android:textColor="@color/zjzc_hint_text_color"
+        android:textSize="22px" />
+
+    <TextView
+        android:id="@+id/money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="+10.00"
+        android:textColor="@color/zjzc_orange_light"
+        android:textSize="26px" />
+
+
+</com.zhy.autolayout.AutoRelativeLayout>

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="cn.bs.zjzc">
+
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!-- 访问网络，网络定位需要上网   -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.NFC"/>
+
+    <uses-permission-sdk-23 android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission-sdk-23 android:name="android.permission.NFC"/>
+
+
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:logo="@mipmap/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="ZCljMK899xdpF2aruV9lGbxNiqIxh0c4"/>
+        <meta-data
+            android:name="design_width"
+            android:value="750"/>
+        <meta-data
+            android:name="design_height"
+            android:value="1333"/>
+
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".ui.AvHome"/>
+        <!-- 个人信息页面 -->
+        <activity android:name=".ui.AvPersonalInfo"/>
+        <!-- 邀请朋友页面 -->
+        <activity android:name=".ui.AvInviteFriend"/>
+        <!-- 我的评价页面 -->
+        <activity android:name=".ui.AvMyEvaluation"/>
+        <!-- 我的订单页面 -->
+        <activity android:name=".ui.AvMyOrder"/>
+        <!-- 我的接单页面 -->
+        <activity android:name=".ui.AvMyReceivedOrder"/>
+        <!-- 我的钱包页面 -->
+        <activity android:name=".ui.AvMyWallet"/>
+        <!-- 消息中心页面 -->
+        <activity android:name=".ui.AvNewsCenter"/>
+        <!-- 设置页面 -->
+        <activity android:name=".ui.AvSetting"/>
+        <!-- 活动页面 -->
+        <activity android:name=".ui.AvActivity"/>
+        <!-- 补充信息(下单)页面 -->
+        <activity android:name=".ui.AvInfoComplement"/>
+        <!-- 地址输入页面 -->
+        <activity android:name=".ui.AvInputAddress"/>
+        <!-- 添加备注页面 -->
+        <activity android:name=".ui.AvAddRemark"/>
+        <!-- 订单支付页面 -->
+        <activity android:name=".ui.AvOrderPay"/>
+        <!-- 添加保价页面 -->
+        <activity android:name=".ui.AvAddInsured"/>
+        <!-- 选择城市 -->
+        <activity android:name=".ui.AvSelectCity"/>
+        <!-- 昵称编辑页面 -->
+        <activity android:name=".ui.AvNickName"/>
+        <!-- 手机号信息（点击个人信息->手机号进入） -->
+        <activity android:name=".ui.AvPhoneNumber"/>
+        <!-- 用户等级信息（点击个人信息->等级进入） -->
+        <activity android:name=".ui.AvUserLevel"/>
+        <!-- 等级规则（点击个人信息->综合信息进入） -->
+        <activity android:name=".ui.AvLevelRules"/>
+        <!-- 公司职位信息（点击个人信息->公司进入） -->
+        <activity android:name=".ui.AvCompanyJob"/>
+        <!-- 修改密码 -->
+        <activity android:name=".ui.AvModifyPassword"/>
+        <!-- 修改常用地址 -->
+        <activity android:name=".ui.AvOftenUseAddress"/>
+        <!-- 客服帮助 -->
+        <activity android:name=".ui.AvServiceHelp"/>
+        <!-- 反馈列表 -->
+        <activity android:name=".ui.AvFeedbackList"/>
+        <!-- 用户守则 -->
+        <activity android:name=".ui.AvUserRegulation"/>
+        <!-- 认证信息 -->
+        <activity android:name=".ui.AvVerificationInfo"/>
+        <!-- 反馈 -->
+        <activity android:name=".ui.AvFeedback"/>
+        <!-- 账户余额 -->
+        <activity android:name=".ui.AvAccountBalance"/>
+        <!-- 我的积分 -->
+        <activity android:name=".ui.AvMyPoint"/>
+        <!-- 我的优惠券 -->
+        <activity android:name=".ui.AvMyCoupon"/>
+        <!-- 收支明细 -->
+        <activity android:name=".ui.AvFundDetail"/>
+        <!-- 充值明细 -->
+        <activity android:name=".ui.AvRecharge"/>
+        <!-- 提现明细 -->
+        <activity android:name=".ui.AvWithdraw"/>
+        <!-- 历史记录 -->
+        <activity android:name=".ui.AvHistory"/>
+        <!-- 订单支付成功 -->
+        <activity android:name=".ui.AvOrderPaySuccess"/>
+        <!-- 登录 -->
+        <activity android:name=".ui.AvLogin">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <!-- 注册 -->
+        <activity android:name=".ui.AvRegister"/>
+        <!-- 忘记密码 -->
+        <activity android:name=".ui.AvForgotPassword"/>
+        <!-- 注册下一步,填写注册资料 -->
+        <activity android:name=".ui.AvRegisterNext"/>
+        <!-- 抢单界面 -->
+        <activity android:name=".ui.AvOrderCompetition"/>
+        <!-- 添加帐号 -->
+        <activity android:name=".ui.AvAddAccount"/>
+        <!-- 订单详情 -->
+        <activity android:name=".ui.AvOrderDetail"/>
+        <!-- 取消订单原因 -->
+        <activity android:name=".ui.AvCancelOrder"/>
+        <!-- 注册接单用户 -->
+        <activity android:name=".ui.AvRegisterOrderTaker"/>
+        <!-- 行业列表 -->
+        <activity android:name=".ui.AvIndustry"/>
+        <!-- 反馈信息详情 -->
+        <activity android:name=".ui.AvFeedbackDetail"/>
+        <!-- 选择银行 -->
+        <activity android:name=".ui.AvSelectBank"/>
+        <!-- 充值明细 -->
+        <activity android:name=".ui.AvRechargeDetail"/>
+        <!-- 提现明细 -->
+        <activity android:name=".ui.AvWithdrawDetail"/>
+        <!-- 输入常用地址 -->
+        <activity android:name=".ui.AvInputOftenAddress"/>
+        <!-- 常用地址补充地址 -->
+        <activity android:name=".ui.AvOftenAddressComplement"/>
+        <!-- 订单详情查看地址 -->
+        <activity android:name=".ui.AvAddressInMap"/>
+        <!-- 订单评价 -->
+        <activity android:name=".ui.AvOrderEvaluation"/>
+        <!-- webview界面 -->
+        <activity android:name=".ui.AvCommdWebView"/>
+        <!-- 多图选择 -->
+        <activity
+            android:name="me.nereo.multi_image_selector.MultiImageSelectorActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/AdverDialogStyle"/>
+
+
+        <service android:name=".socket.service.SocketService"></service>
+        <!-- 搜索 -->
+        <activity android:name=".ui.AvFAQSearch"/>
+        <!-- 百度地图定位服务 -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote"/>
+        <!-- alipay sdk begin -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"/>
+        <!-- alipay sdk end -->
+
+
+        <!-- Ping++ sdk -->
+        <activity
+            android:name="com.pingplusplus.android.PaymentActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+
+
+        <service android:name=".baidumap.CityListService"/>
+        <service android:name=".socket.service.SocketService"/>
+
+        <!--广告-->
+        <activity
+            android:name=".ui.AvAdvertisement"
+            android:theme="@style/AdverDialogStyle" />
+        <!--版本更新-->
+        <activity
+            android:name=".ui.AvAppUpdate"
+            android:theme="@style/AdverDialogStyle" />
+        <!--登录冲突弹窗-->
+        <activity
+            android:name=".dialog.LoginConflictDialog"
+            android:label=""
+            android:theme="@style/AdverDialogStyle"/>
+        <!--订单推送弹窗-->
+        <activity
+            android:name=".dialog.PushOrderDialog"
+            android:label=""
+            android:theme="@style/AdverDialogStyle"/>
+
+        <service android:name=".baidumap.CityListService" />
+        <service android:name=".socket.service.SocketService" />
+
+
+        <activity android:name=".ui.AvAvailableCoupon"></activity>
+        <!--确认抢单详情-->
+        <activity android:name=".ui.AvOrderGrabDetail"></activity>
+
+
+    </application>
+
+</manifest>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/corner_bg_white_r20_normal"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:gravity="center"
+        android:text="验证完成订单"
+        android:textColor="@color/zjzc_hint_text_color"
+        android:textSize="36px" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:background="#dddddd" />
+
+
+    <com.zhy.autolayout.AutoFrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        android:paddingBottom="30px"
+        android:paddingTop="30px">
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20px"
+            android:layout_marginTop="20px"
+            android:text="请输入张三提供的短信验证码,确认完成订单."
+            android:textColor="@color/zjzc_hint_text_color"
+            android:textSize="32px" />
+    </com.zhy.autolayout.AutoFrameLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="40px"
+        android:paddingLeft="40px">
+
+        <TextView
+            android:id="@+id/left_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40px"
+            android:layout_weight="1"
+            android:background="@drawable/corner_bg_grey_r6"
+            android:gravity="center"
+            android:padding="20px"
+            android:text="取消"
+            android:textColor="@color/white"
+            android:textSize="34px"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/right_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40px"
+            android:layout_weight="1"
+            android:background="@drawable/corner_bg_orange_r6"
+            android:gravity="center"
+            android:padding="20px"
+            android:text="确认"
+            android:textColor="@color/white"
+            android:textSize="34px"
+            android:visibility="gone" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

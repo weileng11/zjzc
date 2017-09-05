@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="30px"
+        android:layout_toLeftOf="@+id/content_frame"
+        android:gravity="center_vertical"
+        android:textColor="#a8a8a8"
+        android:textSize="30px" />
+
+    <com.zhy.autolayout.AutoFrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@+id/right_arrow"
+        android:gravity="center_vertical|right"
+        android:paddingBottom="20px"
+        android:paddingRight="30px"
+        android:paddingTop="20px">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:textColor="#a8a8a8"
+            android:textSize="30px" />
+
+    </com.zhy.autolayout.AutoFrameLayout>
+
+    <ImageView
+        android:id="@+id/right_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingRight="30px"
+        android:scaleType="centerInside" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="#f1f2f3" />
+
+</com.zhy.autolayout.AutoRelativeLayout>

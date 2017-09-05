@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/my_order_fragment_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/my_order_top_bar">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/my_order_tab_layout"
+            style="@style/my_tab_layout_style" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/my_order_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+    <cn.bs.zjzc.div.TopBarView
+        android:id="@+id/my_order_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        app:left_drawable_enable="false"
+        app:left_text="返回"
+        app:right_drawable="@mipmap/zjzc_search_orders_icon_search"
+        app:right_enable="true"
+        app:title_drawable="@mipmap/zjzc_arrow_down"
+        app:title_text="订单列表" />
+
+
+</com.zhy.autolayout.AutoRelativeLayout>
